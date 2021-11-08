@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/txtWelcome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:fontFamily="@font/open_sans_light"
+       android:text="WELCOME TO KUUF"
+       android:textAlignment="center"
+       android:textColor="#000000"
+       android:textSize="30sp"
+       android:textStyle="bold" />
+
+   <EditText
+       android:id="@+id/LoginUsername"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Username"
+       android:textColorHint="#80000000"
+       android:layout_below="@+id/txtWelcome"
+       android:layout_marginLeft="60dp"
+       android:layout_marginRight="60dp"
+       android:layout_marginTop="30dp"
+       android:background="@drawable/edit_text_border"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:maxLines="1"
+       android:inputType="text" />
+
+   <TextView
+       android:id="@+id/LoginUsernameError"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/LoginUsername"
+       android:layout_marginLeft="60dp"
+       android:layout_marginTop="3dp"
+       android:visibility="invisible"
+       android:textColor="#FF0000"/>
+
+   <EditText
+       android:id="@+id/LoginPassword"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/LoginUsername"
+       android:hint="Password"
+       android:textColorHint="#80000000"
+       android:layout_marginLeft="60dp"
+       android:layout_marginRight="60dp"
+       android:layout_marginTop="25dp"
+       android:background="@drawable/edit_text_border"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:maxLines="1"
+       android:inputType="textPassword" />
+
+   <TextView
+       android:id="@+id/LoginPasswordError"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/LoginPassword"
+       android:layout_marginLeft="60dp"
+       android:layout_marginTop="3dp"
+       android:visibility="invisible"
+       android:textColor="#FF0000"/>
+
+   <Button
+       android:id="@+id/btnLogin"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="Login"
+       android:textColor="@color/white"
+       android:background="@drawable/edit_text_border"
+       android:layout_below="@id/LoginPassword"
+       android:layout_marginTop="30dp"
+       android:padding="15dp"
+       android:layout_centerHorizontal="true"/>
+
+   <TextView
+       android:id="@+id/Registxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Don't Have an Account? Register Below"
+       android:layout_below="@id/btnLogin"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="10dp"/>
+
+   <Button
+       android:id="@+id/btnRegis"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="Register"
+       android:textColor="@color/white"
+       android:layout_below="@+id/Registxt"
+       android:layout_marginTop="10dp"
+       android:padding="15dp"
+       android:background="@drawable/edit_text_border"
+       android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

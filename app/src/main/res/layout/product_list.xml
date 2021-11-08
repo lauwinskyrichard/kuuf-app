@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    android:outlineAmbientShadowColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tvStoreProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Product Name:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/tvStoreMinPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStoreProductName"
+            android:layout_margin="10dp"
+            android:text="Min Player:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/tvStoreMaxPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStoreMinPlayer"
+            android:layout_margin="10dp"
+            android:text="Max Player:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/tvStoreProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStoreMaxPlayer"
+            android:layout_margin="10dp"
+            android:text="Price:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

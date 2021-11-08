@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterForm">
+
+    <ImageButton
+        android:id="@+id/btnRegisReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_arrow_icon"
+        android:tint="@color/black"
+        android:layout_toLeftOf="@+id/txtRegis"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="40dp"
+        android:background="?android:selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/txtRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alef"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/RegisUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="#80000000"
+        android:layout_below="@+id/txtRegis"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/RegisUsernameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Must Be Between 6 and 12 Characters"
+        android:layout_below="@+id/RegisUsername"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/RegisPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisUsername"
+        android:hint="Password"
+        android:textColorHint="#80000000"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/RegisPasswordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* More Than 8 Characters and Alphanumeric"
+        android:layout_below="@+id/RegisPassword"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/RegisPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisConfirmPassword"
+        android:hint="Phone Number"
+        android:textColorHint="#80000000"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/RegisPhoneNumberError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Must Be Between 10 and 12 Digits"
+        android:layout_below="@+id/RegisPhoneNumber"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <EditText
+        android:id="@+id/RegisConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="#80000000"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/RegisConfirmPasswordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisConfirmPassword"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:text="* Password Not Same"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/RegisDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisPhoneNumber"
+        android:hint="Date of Birth"
+        android:textColorHint="#80000000"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/RegisDOBError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Please Fill The DOB"
+        android:layout_below="@+id/RegisDOB"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <RelativeLayout
+        android:id="@+id/RegisRelative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisDOB"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/RegisGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:textColorHint="#000000"
+            android:textSize="18dp"/>
+
+        <RadioGroup
+            android:id="@+id/RegisGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegisGender"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/RegisMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:id="@+id/RegisFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Female"
+                android:textColor="#000000"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/RegisGenderError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Please Select Gender"
+        android:layout_below="@+id/RegisRelative1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2.5dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <CheckBox
+        android:id="@+id/RegisCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree To Term and Conditions"
+        android:textColor="#000000"
+        android:layout_below="@id/RegisRelative1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/RegisCheckBoxError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Please Tick The Check Box"
+        android:layout_below="@+id/RegisGenderError"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/RegisLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_below="@+id/RegisCheckBox"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_border"/>
+
+</RelativeLayout>

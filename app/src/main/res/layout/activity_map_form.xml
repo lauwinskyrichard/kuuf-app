@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFormActivity">
+
+    <ImageButton
+        android:id="@+id/btnMapReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_icon"
+        android:tint="@color/black"
+        android:layout_margin="10dp"
+        android:background="?android:selectableItemBackground"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapCard"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnMapReturn"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:padding="50dp">
+
+        <fragment
+            android:id="@+id/mapFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:layout_below="@+id/mapCard"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="#FF2A9DF4"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
